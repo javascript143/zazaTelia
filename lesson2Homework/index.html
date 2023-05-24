@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        contnet="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script type="text/javascript">
+               //შექმენით პროგრამა, რომელიც შეამოწმებს კონკრეტული ცვლადი არის თუ არა მასივი.
+
+            let neighborhood = {
+                Tbilisi: "saburtalo",
+                Kutaisi: "nikea",
+                Batumi: "chaobi"
+            }
+             
+             let city = ["Tbilisi", "Batumi", "Kutaisi"]
+
+             alert(typeof neighborhood);
+             alert(Array.isArray(neighborhood));
+
+             alert(typeof city);
+             alert(Array.isArray(city));
+
+             //პროგრამა რომელიც გამოიტანს მასივის პირველ ელემენტს
+
+             let number = [1, 2, 5, 7, 8, 89,]
+               alert(number[0]);
+             //პროგრამა რომელიც გამოიტანს მასივის ბოლო ელემენტს   
+               alert(number[number.length - 1]);
+               //პროგრამა რომელიც გამოიტანს შემდეგი თნმიმდევრობით
+               
+    color = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+    o = ["th","st","nd","rd"]
+          
+        alert(1 + o[1] + 'choice is' + color[0])
+        alert(2 + o[2] + 'choise is' + color[1])
+        alert(3 + o[3] + 'choise is' + color[2])
+        //პროგრამა რომელიც შექმნის ობიექტს და ამ ობიექტს აქვს შემდეგი გასაღებები...
+
+        let person =
+        {
+           name: "zaza",
+           surname: "Telia",
+           age: "21",
+        }
+        //დავამატე ობიექტს ახალი მნიშნელობა
+        person.Gender = "Male";
+        //წავშალე ობიექტის კონკრეტული მონაცემი
+        delete person.age;
+        
+        alert(person.name);
+        alert(person.surname);
+        alert(person.Gender);
+
+        </script>
+    </body>
+</html>
